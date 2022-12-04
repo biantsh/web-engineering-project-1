@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+.navbar {
+    background-color: #2551a8;
+    height: 75px;
+    line-height: 63px;
+    padding-left: 15px;
+}
+
+.navbar li {
+    display: inline;
+    color: white;
+    font-size: 40px;
+    padding-right: 25px;
+    vertical-align: middle;
+}
+
+.container {
+    margin-top: 150px;
+}
+
+.logos {
+    margin-left: 150px;
+    padding-top: 80px;
+    vertical-align: middle;
+    float: left;
+}
+
+.logos img {
+    width: 800px;
+}
+
+.login {
+    float: left;
+    margin-left: 300px;
+}
+
+.login form {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 400px;
+    height: 300px;
+    border: solid #2551a8 3px;
+    text-align: center;
+}
+
+.login label {
+    font-size: 40px;
+}
+
+.login form label {
+    font-size: 25px;
+}
+
+.login form input {
+    width: 250px;
+    height: 50px;
+    border-color:#2551a8;
+    border-radius: 15px; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login button {
+    font-size: 25px;
+    width: 200px;
+    margin-top: 5px;
+    height: 50px;
+}
+
+#submit-button {
+    color: white;
+    background-color: #2551a8;
+    border: none;
+}
+
+#login-toggle-button {
+    border-color: #2551a8;
+    color: #2551a8;
+}
+
+footer {
+    position:fixed;
+    bottom:0px;
+    height:60px;
+    width:100%;
+    background-color: #2551a8;
+    color: white;
+    padding-top: 15px;
+    padding-left: 0px;
+}
+
+footer * {
+    margin-left: 5px;
+}
+
+footer img {
+    width: 40px;
+    margin-left: 30px;
+}
