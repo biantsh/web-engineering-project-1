@@ -104,3 +104,7 @@ footer img {
     width: 40px;
     margin-left: 30px;
 }
+
+footer a, footer a:visited, footer a:hover, footer a:active{
+    color: white;
+}
