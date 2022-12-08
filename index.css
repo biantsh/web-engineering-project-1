@@ -30,46 +30,57 @@ body {
     padding-top: 80px;
     vertical-align: middle;
     float: left;
+
+    position: absolute;
+    top: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .logos img {
-    width: 800px;
+    width: 42vw;
 }
 
 .login {
     float: left;
     margin-left: 300px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .login form {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    width: 400px;
-    height: 300px;
+    padding-top: 2.2vh;
+    padding-bottom: 1.2vh;
+    width: 20.8vw;
+    height: 32.4vh;
     border: solid #2551a8 3px;
     text-align: center;
 }
 
 .login label {
-    font-size: 40px;
+    font-size: 2.1vw;
 }
 
 .login form label {
-    font-size: 25px;
+    font-size: 1.31vw;
 }
 
 .login form input {
-    width: 250px;
-    height: 50px;
+    width: 13vw;
+    height: 5.4vh;
     border-color:#2551a8;
     border-radius: 15px; 
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2.2vh;
 }
 
 .login button {
     font-size: 25px;
-    width: 200px;
+    width: 10.45vw;
     margin-top: 5px;
     height: 50px;
 }
