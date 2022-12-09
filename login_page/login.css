@@ -96,6 +96,11 @@ body {
     color: #2551a8;
 }
 
+#errorMessage {
+    margin-top: .5vh;
+    color: #ff0000;
+}
+
 footer {
     position:fixed;
     bottom:0px;
