@@ -2,8 +2,9 @@
 <html>
 <head>
     <title>Learn Front-end</title>
-    <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="login_page/login.css">
+    <script type="text/javascript" src="login_page/login.js"></script>
+    <script defer src="login_page/form_validation.js"></script>
 </head>
 
 <body>
@@ -25,14 +26,16 @@
             <label id="login-signup-label">Log in</label>
 
             <form id="login-form">
-                <label>Username</label><br>
-                <input type="text" required><br>
-                <label>Password</label><br>
-                <input type="password" required><br>
+                <label for="userName">Username</label><br>
+                <input id="userName" type="text" required><br>
+                <label for="userPassword">Password</label><br>
+                <input id="userPassword" type="password" required><br>
             </form>
 
-            <button id="submit-button">Submit</button>
+            <button id="submit-button" type="submit" form="login-form">Submit</button>
             <button id="login-signup-button" onclick="toggleLoginSignup();">Sign up</button>
+        
+            <div id="errorMessage"></div>
         </div>
 
     </div>
