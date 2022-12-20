@@ -102,7 +102,7 @@ body {
 }
 
 footer {
-    position:fixed;
+    margin-top: 83.8vh;
     bottom:0px;
     height:60px;
     width:100%;
