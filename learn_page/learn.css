@@ -33,7 +33,7 @@ main {
     border-radius: 50px;
     background: #384593;
     padding: 35px;
-    line-height: 20px;
+    line-height: 25px;
     color: #dfe1e3;
      text-align: center;
     width: 1000px;
@@ -104,15 +104,7 @@ button:active{
         color:rgb(29, 155, 240);
         opacity: 0.5;
 }
-em{
-    color:orange;
-}
-b{
-    color: lightblue;
-}
-i{
-    color: yellow;
-}
+
 .learn{
     display: flex;
     text-align: center;
