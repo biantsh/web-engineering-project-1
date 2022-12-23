@@ -1,13 +1,17 @@
 *{
     margin: 0;
+    padding: 0;
 }
-body {
-    background-image: url(../resources/background.jpg);
-}    
-
+main {
+    background: url(../resources/background.jpg) no-repeat bottom, linear-gradient(315deg, #0F3052 0%, #11A0B0 100%);
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 170px;
+}
 
 .navbar {
-    position:fixed; 
+    position:fixed;
+    top: 0;
     width: 100%;
     background-color: #2551a8;
     height: 75px;
@@ -24,50 +28,47 @@ body {
 }
 .help{
     width: 90px;
-    height: 90px;
     border-radius: 65px;
-   display: flex;
-   margin-left: 690px;
-   margin-bottom: 20px;
-   
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .intro{
     border: solid black 2px;
     border-radius: 50px;
-    background: rgb(182, 232, 248);    
-    margin-left: 150px;
-    margin-right: 150px;
+    background: rgb(182, 232, 248);
     padding: 35px;
     line-height: 20px;
     color: #8e8b8b;
-     display: flex;
      text-align: center;
     width: 1200px;
     justify-content: center;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.coli{
-    flex-basis: 50%;
-    
+.coli {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
 }
 .images{
-    display: flex;
-   border-radius: 10px;
-   box-sizing: border-box;
-   margin-left: 600px;
-   background-position: center;
-   background-size: cover;
-   transition: transform 0.5s;
+    display: inline;
+    margin: auto;
    
 }
 .html{
     height: 200px;
+    margin-right: 30px;
 }
 .css{ 
     height: 200px;
 }
-.javascript
-{   margin-left: 670px;
+.javascript {
     height: 200px;
 }
 .javascript:hover{
@@ -156,6 +157,16 @@ i{
     color: #4a44c6;
     font-size: 26px;
     margin-top: 50px;
+    text-align: left;
+    width: 550px;
+    height: 230px;
+}
+
+.learn .learn_more button {
+    position: absolute;
+    bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .learn .learn_more p.role{
@@ -166,7 +177,6 @@ i{
 }
 
 footer {
-    margin-top: 83.8vh;
     bottom:0px;
     height:60px;
     width:100%;
