@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
-*{
+* {
     margin: 0;
 }
 
-
-body {
-    background-image: url(../resources/background.jpg);   
+main {
+    background: url(../resources/background.jpg) no-repeat bottom;
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 170px;
 }
 
-  .navbar {
-     position:fixed; 
+.navbar {
+    position:fixed; 
     width: 100%;
     background-color: #2551a8;
     height: 75px;
@@ -28,14 +30,17 @@ body {
 .wrapper{
     margin-top: auto;
 }
- #h1{
+
+main .h1 {
     border: 3px solid rgb(21, 21, 21) ;
     color: antiquewhite;
     background-color: rgb(137, 137, 191);
     font-size: 52px;
-    margin-bottom: 60px;
+    margin-top: 28.5px;
     text-align: center;
-    margin-left: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
 }
 .team{
     display: flex;
@@ -46,7 +51,7 @@ body {
 }
 .team .team_member{
     background: #fff;
-    margin: 5px;
+    margin: 10px;
     margin-bottom: 50px;
     width: 300px;
     padding: 35px;
@@ -58,7 +63,7 @@ body {
 .team .team_member{
     color: black;
     font-size: 26px;
-    margin-top: 50px;
+    margin-top: 28.5px;
     
 }
 
@@ -87,7 +92,6 @@ body {
 }
 
 footer {
-    margin-top: 83.8vh;
     bottom:0px;
     height:60px;
     width:100%;
