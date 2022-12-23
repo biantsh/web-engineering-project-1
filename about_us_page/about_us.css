@@ -2,8 +2,6 @@
 
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 
@@ -87,25 +85,27 @@ body {
     padding: 10px;
     
 }
+
 footer {
-    position:center;
+    margin-top: 83.8vh;
     bottom:0px;
     height:60px;
     width:100%;
     background-color: #2551a8;
     color: white;
-    padding-bottom: 75px;
+    padding-top: 15px;
     padding-left: 0px;
-   
 }
 
 footer * {
     margin-left: 5px;
-    text-decoration: none;
-    color: #fff;
 }
 
 footer img {
     width: 40px;
     margin-left: 30px;
+}
+
+footer a, footer a:visited, footer a:hover, footer a:active{
+    color: white;
 }
