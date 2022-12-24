@@ -7,7 +7,7 @@ body {
 }
 
 .navbar {
-    background-color: #2551a8;
+    background-color: #384593;
     height: 75px;
     line-height: 63px;
     padding-left: 15px;
@@ -57,7 +57,7 @@ body {
     padding-bottom: 1.2vh;
     width: 20.8vw;
     height: 32.4vh;
-    border: solid #2551a8 3px;
+    border: solid #384593 3px;
     text-align: center;
 }
 
@@ -72,7 +72,7 @@ body {
 .login form input {
     width: 13vw;
     height: 5.4vh;
-    border-color:#2551a8;
+    border-color:#384593;
     border-radius: 15px; 
     text-align: center;
     margin-bottom: 2.2vh;
@@ -87,13 +87,13 @@ body {
 
 #submit-button {
     color: white;
-    background-color: #2551a8;
+    background-color: #384593;
     border: none;
 }
 
 #login-toggle-button {
-    border-color: #2551a8;
-    color: #2551a8;
+    border-color: #384593;
+    color: #384593;
 }
 
 #errorMessage {
@@ -106,7 +106,7 @@ footer {
     bottom:0px;
     height:60px;
     width:100%;
-    background-color: #2551a8;
+    background-color: #384593;
     color: white;
     padding-top: 15px;
     padding-left: 0px;
