@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+}
+
+main {
+    background: url(../resources/background.jpg) no-repeat bottom;
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 254px;
+}
+
+.navbar {
+    position: fixed; 
+    width: 100%;
+    background-color: #384593;
+    height: 75px;
+    line-height: 63px;
+    padding-left: 15px;
+}
+
+.navbar li {
+    display: inline;
+    color: white;
+    font-size: 40px;
+    padding-right: 25px;
+    vertical-align: middle;
+}
+
+.title-bar {
+    border: 3px solid rgb(21, 21, 21) ;
+    color: #dfe1e3;
+    background-color: #384593;
+    font-size: 52px;
+    margin-top: 28.5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+}
+
+.member-card {
+    background: white;
+    margin: 10px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 25px;
+    line-height: 20px;
+    color: black;
+    font-size: 26px;
+    margin-top: 28.5px;
+    border: #384593 solid 2px;
+}
+
+.member-card p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.member-card-header {
+    text-align: center;
+}
+
+.member-card-header img {
+    width: 100px;
+}
+
+.member-card-header h3 {
+    margin-top: 10px;
+    color: #384593;
+}
+
+.member-card-header p {
+    color: #7d7d7d;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+footer {
+    height: 60px;
+    background-color: #384593;
+    color: white;
+    padding-top: 15px;
+}
+
+footer * {
+    margin-left: 5px;
+}
+
+footer img {
+    width: 40px;
+    margin-left: 30px;
+}
+
+footer a, footer a:visited, footer a:hover, footer a:active {
+    color: white;
+}
