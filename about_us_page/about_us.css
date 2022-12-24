@@ -10,7 +10,7 @@ main {
 }
 
 .navbar {
-    position:fixed; 
+    position: fixed; 
     width: 100%;
     background-color: #384593;
     height: 75px;
@@ -38,13 +38,13 @@ main {
     width: 300px;
 }
 
-.team{
+.team {
     display: flex;
     justify-content: center;
 }
 
 .member-card {
-    background: #fff;
+    background: white;
     margin: 10px;
     margin-bottom: 50px;
     width: 300px;
@@ -71,6 +71,7 @@ main {
 
 .member-card-header h3 {
     margin-top: 10px;
+    color: #384593;
 }
 
 .member-card-header p {
@@ -80,7 +81,7 @@ main {
 }
 
 footer {
-    height:60px;
+    height: 60px;
     background-color: #384593;
     color: white;
     padding-top: 15px;
