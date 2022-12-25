@@ -1,41 +1,44 @@
 * {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 main {
     background: url(../resources/background.jpg) no-repeat bottom;
     background-size: cover;
-    padding-top: 75px;
-    padding-bottom: 254px;
+    padding-top: 7vh;
+    padding-bottom: 26vh;
 }
 
 .navbar {
     position: fixed; 
     width: 100%;
     background-color: #384593;
-    height: 75px;
-    line-height: 63px;
-    padding-left: 15px;
+    height: 7.5vh;
+    line-height: 2vh;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    padding-bottom: 0vh;
 }
 
 .navbar li {
     display: inline;
     color: white;
-    font-size: 40px;
-    padding-right: 25px;
+    font-size: 2.6vw;
+    padding-right: 1.8vw;
     vertical-align: middle;
 }
 
 .title-bar {
-    border: 3px solid rgb(21, 21, 21) ;
+    border: 0.25vh solid rgb(21, 21, 21) ;
     color: #dfe1e3;
     background-color: #384593;
-    font-size: 52px;
-    margin-top: 28.5px;
+    font-size: 3.2vw;
+    margin-top: 3.1vh;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 17.3vw;
 }
 
 .team {
@@ -45,20 +48,20 @@ main {
 
 .member-card {
     background: white;
-    margin: 10px;
-    margin-bottom: 50px;
-    width: 300px;
-    padding: 25px;
-    line-height: 20px;
+    margin: 0.6vw;
+    margin-bottom: 10vh;
+    width: 16vw;
+    padding: 3vh;
+    line-height: 2vh;
     color: black;
-    font-size: 26px;
-    margin-top: 28.5px;
-    border: #384593 solid 2px;
+    font-size: 1.3vw;
+    margin-top: 2vh;
+    border: #384593 solid 0.25vh;
 }
 
 .member-card p {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 2vh;
+    font-size: 1vw;
 }
 
 .member-card-header {
@@ -66,36 +69,44 @@ main {
 }
 
 .member-card-header img {
-    width: 100px;
+    width: 5.5vw;
 }
 
 .member-card-header h3 {
-    margin-top: 10px;
+    margin-top: 1vh;
     color: #384593;
 }
 
 .member-card-header p {
     color: #7d7d7d;
-    font-size: 16px;
-    margin-top: 5px;
+    font-size: 0.9vw;
+    margin-top: 0.8vh;
 }
 
 footer {
-    height: 60px;
+    margin-top: 0vh;
+    min-height: 60px;
+    bottom:0vh;
+    width:100%;
     background-color: #384593;
     color: white;
-    padding-top: 15px;
+    padding-top: 1vh;
+    padding-left: 0vw;
+    
+   
 }
 
 footer * {
-    margin-left: 5px;
+    margin-left: 0.3vw;
+    margin-bottom: 0vh;
+   
 }
 
 footer img {
-    width: 40px;
-    margin-left: 30px;
+    width: 2vw;
+    margin-left: 1.5vw;
 }
 
-footer a, footer a:visited, footer a:hover, footer a:active {
+footer a, footer a:visited, footer a:hover, footer a:active{
     color: white;
 }

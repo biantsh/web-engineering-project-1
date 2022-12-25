@@ -3,52 +3,54 @@
     scroll-behavior: smooth;
 }
 
+main {
+    background: url(../resources/background.jpg) no-repeat bottom;
+    background-size: cover;
+    padding-top: 7vh;
+    padding-bottom: 26vh;
+}
+
 .navbar {
-    position: fixed;
+    position: fixed; 
     width: 100%;
     background-color: #384593;
-    height: 75px;
-    line-height: 63px;
-    padding-left: 15px;
+    height: 7.5vh;
+    line-height: 2vh;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    padding-bottom: 0vh;
 }
 
 .navbar li {
     display: inline;
     color: white;
-    font-size: 40px;
-    padding-right: 25px;
+    font-size: 2.6vw;
+    padding-right: 1.8vw;
     vertical-align: middle;
 }
 
-main {
-    background: url(../resources/background.jpg) no-repeat bottom;
-    background-size: cover;
-    padding-top: 75px;
-    padding-bottom: 170px;
-}
-
 .intro-paragraph {
-    margin-top: 20px;
+    margin-top: 3vh;
     border: none;
-    border-radius: 50px;
+    border-radius: 5vh;
     background: #384593;
-    padding: 35px;
-    line-height: 25px;
+    padding: 2vw;
+    line-height: 2vh;
     color: #dfe1e3;
     text-align: center;
-    width: 1000px;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 25px;
+    font-size: 1vw;
 }
 
 .destination-logos {
-    margin-top: 50px;
+    margin-top: 5vh;
     text-align: center;
 }
 
 .destination-logos * {
-    height: 250px;
+    height: 25vh;
 }
 
 .destination-logos *:hover {
@@ -63,7 +65,7 @@ main {
 }
 
 .destination-logos .html {
-    margin-right: 30px;
+    margin-right: 1vw;
 }
 
 .html:hover {
@@ -86,55 +88,71 @@ main {
 
 .learn-section .card {
     background: #a9a9a91d;
-    margin: 5px;
-    margin-bottom: 50px;
-    line-height: 20px;
+    margin: 0.2vw;
+    margin-bottom: 1vh;
+    line-height: 2.4vh;
     position: relative;
-    font-size: 26px;
-    margin-top: 50px;
-    width: 560px;
-    height: 180px;
-    padding: 25px;
+    width: 100vw;
+    height: 18vh;
+    padding: 1vw;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+    margin-top: 1vh;   
+    color: #dfe1e3;
+    font-size: 1vw;
+   
+    
+    
+}
+::-webkit-scrollbar{
+    display: none;
 }
 
-.learn-section .card p {
-    margin-top: 12px;
-    color: #dfe1e3;
-    font-size: 19.5px;
-}
+
+
 
 .learn-section .card button {
-    position: absolute;
-    bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    position: static;
+    bottom: 3vw;
+    padding-left: 0.9vw;
+    padding-right: 0.9vw;
     background-color: #384593;
     color: white;
     border: none;
-    height: 36px;
-    border-radius: 18px;
+    height: 8vh;
+    border-radius: 4vh;
     cursor: pointer;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.8vw;
+    margin-left: 8vw;
+    
 }
 
+
 footer {
-    height: 60px;
+    margin-top: 0vh;
+    min-height: 60px;
+    bottom:0vh;
+    width:100%;
     background-color: #384593;
     color: white;
-    padding-top: 15px;
+    padding-top: 1vh;
+    padding-left: 0vw;
+    
+   
 }
 
 footer * {
-    margin-left: 5px;
+    margin-left: 0.3vw;
+    margin-bottom: 0vh;
+   
 }
 
 footer img {
-    width: 40px;
-    margin-left: 30px;
+    width: 2vw;
+    margin-left: 1.5vw;
 }
 
-footer a, footer a:visited, footer a:hover, footer a:active {
+footer a, footer a:visited, footer a:hover, footer a:active{
     color: white;
 }
