@@ -17,7 +17,7 @@ main {
     height: 7.5vh;
     line-height: 2vh;
     padding-left: 1vw;
-    padding-top: 2vh;
+    padding-top: 4vh;
     padding-bottom: 0vh;
 }
 
@@ -124,7 +124,8 @@ main {
     cursor: pointer;
     font-weight: bold;
     font-size: 0.8vw;
-    margin-left: 8vw;
+    margin-left: 10vw;
+    margin-top: 2vh;
     
 }
 

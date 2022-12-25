@@ -7,17 +7,20 @@ body {
 }
 
 .navbar {
+
+    width: 100%;
     background-color: #384593;
-    height: 75px;
-    line-height: 63px;
-    padding-left: 15px;
+    height: 7.5vh;
+    line-height: 2vh;
+    padding-left: 1vw;
+    padding-top: 2vh;
 }
 
 .navbar li {
     display: inline;
     color: white;
-    font-size: 40px;
-    padding-right: 25px;
+    font-size: 2.6vw;
+    padding-right: 1.8vw;
     vertical-align: middle;
 }
 
