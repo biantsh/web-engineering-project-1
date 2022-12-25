@@ -8,32 +8,30 @@ body {
 
 .navbar {
     background-color: #384593;
-    height: 75px;
-    line-height: 63px;
-    padding-left: 15px;
+    height: 8.1vh;
+    line-height: 6.8vh;
+    padding-left: 0.79vw;
 }
 
 .navbar li {
     display: inline;
     color: white;
-    font-size: 40px;
-    padding-right: 25px;
+    font-size: 2.1vw;
+    padding-right: 1.31vw;
     vertical-align: middle;
 }
 
 .container {
-    margin-top: 150px;
+    margin-top: 16.2vh;
 }
 
 .logos {
-    margin-left: 150px;
-    padding-top: 80px;
+    margin-left: 7.89vw;
+    padding-top: 8.64vh;
     vertical-align: middle;
     float: left;
-
     position: absolute;
     top: 45%;
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -43,12 +41,11 @@ body {
 
 .login {
     float: left;
-    margin-left: 300px;
+    margin-left: 15.8vw;
 
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -81,8 +78,8 @@ body {
 .login button {
     font-size: 25px;
     width: 10.45vw;
-    margin-top: 5px;
-    height: 50px;
+    margin-top: 0.54vh;
+    height: 5.4vh;
 }
 
 #submit-button {
@@ -103,22 +100,22 @@ body {
 
 footer {
     margin-top: 83.8vh;
-    bottom:0px;
-    height:60px;
-    width:100%;
+    bottom: 0;
+    height: 6.48vh;
+    width: 100%;
     background-color: #384593;
     color: white;
-    padding-top: 15px;
-    padding-left: 0px;
+    padding-top: 1.62vh;
+    padding-left: 0;
 }
 
 footer * {
-    margin-left: 5px;
+    margin-left: 0.26vw;
 }
 
 footer img {
-    width: 40px;
-    margin-left: 30px;
+    width: 2.1vw;
+    margin-left: 1.58vw;
 }
 
 footer a, footer a:visited, footer a:hover, footer a:active{
