@@ -5,24 +5,25 @@
 main {
     background: url(../resources/background.jpg) no-repeat bottom;
     background-size: cover;
-    padding-top: 75px;
-    padding-bottom: 254px;
+    padding-top: 8.1vh;
+    padding-bottom: 27.43vh;
+    height: 56.4vh;
 }
 
 .navbar {
     position: fixed; 
     width: 100%;
     background-color: #384593;
-    height: 75px;
-    line-height: 63px;
-    padding-left: 15px;
+    height: 8.1vh;
+    line-height: 6.8vh;
+    padding-left: 0.79vw;
 }
 
 .navbar li {
     display: inline;
     color: white;
-    font-size: 40px;
-    padding-right: 25px;
+    font-size: 2.1vw;
+    padding-right: 1.31vw;
     vertical-align: middle;
 }
 
@@ -30,12 +31,12 @@ main {
     border: 3px solid rgb(21, 21, 21) ;
     color: #dfe1e3;
     background-color: #384593;
-    font-size: 52px;
-    margin-top: 28.5px;
+    font-size: 2.73vw;
+    margin-top: 3.07vh;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 15.8vw;
 }
 
 .team {
@@ -45,20 +46,20 @@ main {
 
 .member-card {
     background: white;
-    margin: 10px;
-    margin-bottom: 50px;
-    width: 300px;
-    padding: 25px;
-    line-height: 20px;
+    margin: 0.52vw;
+    margin-bottom: 5.4vh;
+    width: 15.8vw;
+    padding: 1.31vw;
+    line-height: 2.16vh;
     color: black;
-    font-size: 26px;
-    margin-top: 28.5px;
+    font-size: 1.36vw;
+    margin-top: 3.07vh;
     border: #384593 solid 2px;
 }
 
 .member-card p {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 2.16vh;
+    font-size: 1.05vw;
 }
 
 .member-card-header {
@@ -66,34 +67,34 @@ main {
 }
 
 .member-card-header img {
-    width: 100px;
+    width: 5.26vw;
 }
 
 .member-card-header h3 {
-    margin-top: 10px;
+    margin-top: 1.08vh;
     color: #384593;
 }
 
 .member-card-header p {
     color: #7d7d7d;
-    font-size: 16px;
-    margin-top: 5px;
+    font-size: 0.84vw;
+    margin-top: 0.54vh;
 }
 
 footer {
-    height: 60px;
+    height: 6.48vh;
     background-color: #384593;
     color: white;
-    padding-top: 15px;
+    padding-top: 1.62vh;
 }
 
 footer * {
-    margin-left: 5px;
+    margin-left: 0.26vw;
 }
 
 footer img {
-    width: 40px;
-    margin-left: 30px;
+    width: 2.1vw;
+    margin-left: 1.58vw;
 }
 
 footer a, footer a:visited, footer a:hover, footer a:active {
