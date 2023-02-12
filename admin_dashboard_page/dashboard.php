@@ -2,6 +2,7 @@
 
 <?php
     require("../DATABASE/db.php");
+    include("../auth.php");
 
     $technologies_query = "SELECT * FROM `technologies`";
     $result = mysqli_query($connection, $technologies_query);

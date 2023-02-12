@@ -62,6 +62,7 @@
 
     <?php
         require('../DATABASE/user.php');
+        include("../auth.php");
 
         // Register user
         if (isset($_POST['username'])) {

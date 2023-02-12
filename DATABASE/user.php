@@ -1,5 +1,6 @@
 <?php
     require('db.php');
+    include("../auth.php");
 
     class User {
         private $username;
@@ -53,7 +54,8 @@
 
             if ($result) {
                 // Add row in `user_progress` defaulting to all false values (no content finished yet)
-                $query = "INSERT into `user_progress (username, finished_html, finished_css, finished_js) VALUES ('$this->username', 0, 0, 0)`"
+                $query = "INSERT into `user_progress (username, finished_html, finished_css, finished_js) VALUES ('$this->username', 0, 0, 0)`";
+                $result &= mysqli_query($this->connection, $query);
             }
 
             return $result;

@@ -60,6 +60,7 @@
 
     <?php
         require('DATABASE/user.php');
+        session_start();
 
         // Log in user
         if (isset($_POST['username'])) {

@@ -2,6 +2,7 @@
 
 <?php
     require("../DATABASE/db.php");
+    include("../auth.php");
 
     $query = "SELECT * FROM `technologies`";
     $result = mysqli_query($connection, $query);
@@ -48,6 +49,10 @@
             <?php endforeach; ?>
         </div>
     
+        <div class="track-progress">
+            <a href="../track_progress_page/track_progress.php"><button>Track progress</button></a>
+        </div>
+
         <footer>
             <table>
                 <tr>

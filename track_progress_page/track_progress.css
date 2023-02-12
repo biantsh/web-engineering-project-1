@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+.navbar {
+    background-color: #384593;
+    height: 8.1vh;
+    line-height: 6.8vh;
+    padding-left: 0.79vw;
+}
+
+.navbar li {
+    display: inline;
+    color: white;
+    font-size: 2.1vw;
+    padding-right: 1.31vw;
+    vertical-align: middle;
+}
+
+.intro-paragraph {
+    margin-top: 2.16vh;
+    border: none;
+    border-radius: 50px;
+    background: #384593;
+    padding: 1.84vw;
+    line-height: 2.7vh;
+    color: #dfe1e3;
+    text-align: center;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.31vw;
+}
+
+.progress-box-container {
+    display: flex;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-box {
+    background-color: #d4d4d4;
+    display: flex;
+    font-size: 1.5vw;
+    width: 10.5vw;
+    height: 5vh;
+    margin-top: 3vh;
+    margin-right: auto;
+    align-content: left;
+    border: #000 1px solid;
+}
+
+.progress-box input {
+    width: 5vw;
+    transform: scale(0.6);
+}
+
+.progress-box p {
+    margin-top: 0.6vh;
+}
+
+footer {
+    margin-top: 68.8vh;
+    bottom: 0;
+    height: 6.48vh;
+    width: 100%;
+    background-color: #384593;
+    color: white;
+    padding-top: 1.62vh;
+    padding-left: 0;
+    font-size: min(2vw, 15px);
+}
+
+footer * {
+    margin-left: 0.26vw;
+}
+
+footer img {
+    width: 2.1vw;
+    margin-left: 1.58vw;
+}
+
+footer a, footer a:visited, footer a:hover, footer a:active{
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        height: 6.1vh;
+        line-height: 5.8vh;
+        padding-left: 1.5vw;
+    }
+
+    .navbar li {
+        font-size: 4.1vw;
+        padding-right: 2.31vw;
+    }
+
+    .intro-paragraph {
+        margin-top: 2.16vh;
+        padding: 1.84vw;
+        line-height: 1.7vh;
+        width: 60vw;
+        font-size: 2.31vw;
+    }
+
+    footer {
+        margin-top: 85.8vh;
+    }
+}
