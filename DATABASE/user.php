@@ -40,7 +40,7 @@
 
         public function existsInDB() {
             // Check whether the user exists in the database.
-            $query = "SELECT * FROM `users` WHERE username='$this->username' and password='$this->password'";
+            $query = "SELECT * FROM `users` WHERE username='$this->username' and password='".md5($this->password)."'";
             $result = mysqli_query($this->connection, $query) or die(mysqli_error($this->connection));
             
             return mysqli_num_rows($result) == 1;
@@ -48,7 +48,7 @@
 
         public function addToDB() {
             // Add the user to the database and returns a boolean success indicator.
-            $query = "INSERT into `users` (username, password, role) VALUES ('$this->username', '$this->password', 'user')";
+            $query = "INSERT into `users` (username, password, role) VALUES ('$this->username', '".md5($this->password)."', 'user')";
             $result = mysqli_query($this->connection, $query);
 
             return $result;
@@ -56,7 +56,7 @@
 
         public function getRole() {
             // Get the role of a person (user/admin) based on the username and password.
-            $query = "SELECT * FROM `users` WHERE username='$this->username' and password='$this->password'";
+            $query = "SELECT * FROM `users` WHERE username='$this->username' and password='".md5($this->password)."'";
             $result = mysqli_query($this->connection, $query) or die(mysqli_error($this->connection));
             $matched_users = mysqli_fetch_all($result, MYSQLI_ASSOC);
             
