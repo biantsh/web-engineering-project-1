@@ -27,7 +27,7 @@ body {
 
 .logos {
     margin-left: 7.89vw;
-    padding-top: 8.64vh;
+    margin-top: 4vh;
     vertical-align: middle;
     float: left;
     position: absolute;
@@ -36,13 +36,12 @@ body {
 }
 
 .logos img {
-    width: 42vw;
+    width: max(42vw, 400px);
 }
 
 .login {
     float: left;
     margin-left: 15.8vw;
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -107,6 +106,7 @@ footer {
     color: white;
     padding-top: 1.62vh;
     padding-left: 0;
+    font-size: min(2vw, 15px);
 }
 
 footer * {
@@ -120,4 +120,58 @@ footer img {
 
 footer a, footer a:visited, footer a:hover, footer a:active{
     color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        height: 6.1vh;
+        line-height: 5.8vh;
+        padding-left: 1.5vw;
+    }
+
+    .navbar li {
+        font-size: 4.1vw;
+        padding-right: 2.31vw;
+    }
+
+    .container {
+        margin-top: 0;
+    }
+    
+    .logos {
+        top: 0;
+        margin-top: 17.5vh;
+    }
+
+    .login {
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 22.5vh;
+    }
+
+    #login-signup-label {
+        font-size: 4.5vw;
+    }
+
+    .login form {
+        width: 63vw;
+    }
+
+    .login form label {
+        font-size: 3vw;
+    }
+    
+    .login form input {
+        width: 40vw;
+    }
+
+    .login button {
+        font-size: 20px;
+        width: 31.5vw;
+    }
+
+    footer {
+        margin-top: 85.8vh;
+    }
 }

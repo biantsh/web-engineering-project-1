@@ -3,6 +3,13 @@
     scroll-behavior: smooth;
 }
 
+main {
+    background: url(../resources/background.jpg) no-repeat bottom;
+    background-size: cover;
+    padding-top: 8.1vh;
+    padding-bottom: 18.36vh;
+}
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -18,13 +25,6 @@
     font-size: 2.1vw;
     padding-right: 1.31vw;
     vertical-align: middle;
-}
-
-main {
-    background: url(../resources/background.jpg) no-repeat bottom;
-    background-size: cover;
-    padding-top: 8.1vh;
-    padding-bottom: 18.36vh;
 }
 
 .intro-paragraph {
@@ -124,6 +124,7 @@ footer {
     background-color: #384593;
     color: white;
     padding-top: 1.62vh;
+    font-size: min(2vw, 15px);
 }
 
 footer * {
@@ -137,4 +138,55 @@ footer img {
 
 footer a, footer a:visited, footer a:hover, footer a:active {
     color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        height: 6.1vh;
+        line-height: 5.8vh;
+        padding-left: 1.5vw;
+    }
+
+    .navbar li {
+        font-size: 4.1vw;
+        padding-right: 2.31vw;
+    }
+    
+    .intro-paragraph {
+        margin-top: 2.16vh;
+        padding: 1.84vw;
+        line-height: 1.7vh;
+        width: 60vw;
+        font-size: 2.31vw;
+    }
+
+    .learn-section {
+        display: block;
+        padding-top: 1.5vh;
+        padding-left: 10vw;
+        padding-bottom: 2vh;
+    }
+
+    .learn-section .card {
+        margin: 0.26vw;
+        margin-bottom: 2vh;
+        line-height: 2.16vh;
+        font-size: 4vw;
+        margin-top: 2vh;
+        width: 80%;
+        height: 19.44vh;
+        padding: 3vw;
+    }
+    
+    .learn-section .card p {
+        margin-top: 2vw;
+        font-size: 2.5vw;
+    }
+
+    .learn-section .card button {
+        bottom: 1vh;
+        width: 20.5vw;
+        height: 3.88vh;
+        font-size: 1.8vw;
+    }
 }

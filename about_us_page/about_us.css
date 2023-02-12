@@ -1,6 +1,6 @@
 * {
     margin: 0;
-}
+}   
 
 main {
     background: url(../resources/background.jpg) no-repeat bottom;
@@ -99,4 +99,47 @@ footer img {
 
 footer a, footer a:visited, footer a:hover, footer a:active {
     color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        height: 6.1vh;
+        line-height: 5.8vh;
+        padding-left: 1.5vw;
+    }
+
+    .navbar li {
+        font-size: 4.1vw;
+        padding-right: 2.31vw;
+    }
+
+    .title-bar {
+        font-size: 7vw;
+        width: 40vw;
+    }
+
+    .team {
+        display: block;
+        margin-left: 13vw;
+    }
+
+    .member-card {
+        width: 70vw;
+        font-size: 4vw;
+        margin-top: 2vh;
+        margin-bottom: 2.5vh;
+    }
+
+    .member-card p {
+        margin-top: 3.16vh;
+        font-size: 3vw;
+    }
+
+    .member-card-header p {
+        margin-top: 0.7vh;
+    }
+
+    .member-card-header img {
+        width: 10vw;
+    }
 }
