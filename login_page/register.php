@@ -10,8 +10,8 @@
     <header>
         <ul class="navbar">
             <a href="../login.php"><li>Home</li></a>
-            <a href="../learn_page/learn.html"><li>Learn</li></a>
-            <a href="../about_us_page/about_us.html"><li>About us</li></a>
+            <li class="disabled-nav-button">Learn</li>
+            <li class="disabled-nav-button">About us</li>
         </ul>
     </header>
 

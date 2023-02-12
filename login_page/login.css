@@ -21,6 +21,10 @@ body {
     vertical-align: middle;
 }
 
+.navbar .disabled-nav-button {
+    color: #a6a6a6;
+}
+
 .container {
     margin-top: 16.2vh;
 }
