@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+
+<?php
+    require("../DATABASE/db.php");
+
+    $query = "SELECT * FROM `technologies`";
+    $result = mysqli_query($connection, $query);
+    $technologies = mysqli_fetch_all($result, MYSQLI_ASSOC);
+?>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -19,40 +28,24 @@
         
         <main>
             <div>
-                <p class="intro-paragraph">Here you can find useful resources for HTML, CSS and JavaScript. They are very straight-forward tools 
+                <p class="intro-paragraph">Here you can find useful resources for different technologies used on the web. They are very straight-forward tools 
                                 that you can quite quickly apply to your real-life projects. </p>
             </div>
             <div class="destination-logos" >
-                    <a href="#learnmoreabouthtml"><img src="../resources/logo_html.png" alt="html" class="html"  id="html"></a>
-                    <a href="#learnmoreaboutcss"><img src="../resources/logo_css.png" alt="css" class="css"></a><br>
-                    <a href="#learnmoreaboutjs"><img src="../resources/logo_js.png" alt="js"  class="javascript"></a>
+                    <a href="#card0"><img src="../resources/logo_html.png" alt="html" class="html"  id="html"></a>
+                    <a href="#card1"><img src="../resources/logo_css.png" alt="css" class="css"></a><br>
+                    <a href="#card2"><img src="../resources/logo_js.png" alt="js"  class="javascript"></a>
             </div>
         </main> 
         
-        <div class="learn-section">        
-            <div class="card" id="learnmoreabouthtml">        
-                <h3 style="color: orange;">Html</h3>
-                <p>...stands for Hyper Text Markup Language and is the standard markup language for creating webpages. In simple terms, 
-                it describes the <i>structure</i> of a webpage. HTML consists of a series of elements such as buttons or labels, 
-                where each element tells the browser how it wants to be displayed.</p>
-                <a href="https://www.geeksforgeeks.org/html/" target="_blank"><button>More about HTML</button></a>
-            </div>
-
-            <div class="card" id="learnmoreaboutcss">
-                <h3 style="color: lightblue;">Css</h3>
-                <p>...is the language that describes the <i>presentation</i> of webpages, including colors, layout, and fonts. It allows 
-                the page to be responsive to different types of devices, such as computers, tablets or phones. CSS can be used with 
-                any XML-based markup language, but is most commonly paired with HTML.</p>
-                <a href="https://www.geeksforgeeks.org/css/" target="_blank"><button>More about CSS</button></a>
-            </div>
-
-            <div class="card" id="learnmoreaboutjs">       
-                <h3 style="color: yellow;">JavaScript</h3>
-                <p>...is used by programmers across the world to create dynamic and interactive web content like applications and browsers. 
-                Due to being the main scripting language used in the web by a wide margin, JavaScript is the most popular programming 
-                language in the world.</p>
-            <a href="https://www.geeksforgeeks.org/javascript/" target="_blank"><button>More about JS</button></a>
-            </div>
+        <div class="learn-section">
+            <?php foreach($technologies as $technology) : ?>
+                <div class="card" id="<?php echo $technology['element_id'] ?>">
+                    <h3 style="color: <?php echo $technology['title_color'] ?>;"><?php echo $technology['name'] ?></h3>
+                    <p><?php echo $technology['description'] ?></p>
+                    <a href="<?php echo $technology['resource_link']?>" target="_blank"><button>More about <?php echo $technology['acronym'] ?></button></a>
+                </div>
+            <?php endforeach; ?>
         </div>
     
         <footer>

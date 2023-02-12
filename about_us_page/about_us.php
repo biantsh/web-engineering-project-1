@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-    require('../DATABASE/db.php');
+    require("../DATABASE/db.php");
 
     $query = "SELECT * FROM `dev_info`";
     $result = mysqli_query($connection, $query);
