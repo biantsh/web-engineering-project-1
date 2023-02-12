@@ -1,6 +1,6 @@
 <?php
     require('db.php');
-    include("../auth.php");
+    // include("../auth.php");
 
     class User {
         private $username;

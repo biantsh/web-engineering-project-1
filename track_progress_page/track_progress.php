@@ -22,25 +22,43 @@
         </ul>
     </header>
 
-    <div>
-        <p class="intro-paragraph">Use this page to keep note of which technologies you have already read up on. Boxes you click
-                                   are saved automatically.</p>
-    </div>
-
-    <div class="progress-box-container">
-        <div class="progress-box">
-            <input type="checkbox" <?php echo $user_progress->getFinishedHTML() != 0 ? 'checked' : '' ?>><p>HTML</p>
-            
+    <main>
+        <div>
+            <p class="intro-paragraph">Use this page to keep note of which technologies you have already read up on. Boxes you click
+                                    are saved automatically.</p>
         </div>
 
-        <div class="progress-box">
-            <input type="checkbox" <?php echo $user_progress->getFinishedCSS() != 0 ? 'checked' : '' ?>><p>CSS</p>
+        <div class="progress-box-container">
+            <div class="progress-box">
+                <input type="checkbox" <?php echo $user_progress->getFinishedHTML() != 0 ? 'checked' : '' ?>><p>HTML</p>
+                
+            </div>
+
+            <div class="progress-box">
+                <input type="checkbox" <?php echo $user_progress->getFinishedCSS() != 0 ? 'checked' : '' ?>><p>CSS</p>
+            </div>
+
+            <div class="progress-box">
+                <input type="checkbox" <?php echo $user_progress->getFinishedJS() != 0 ? 'checked' : '' ?>><p>JS</p>
+            </div>
         </div>
 
-        <div class="progress-box">
-            <input type="checkbox" <?php echo $user_progress->getFinishedJS() != 0 ? 'checked' : '' ?>><p>JS</p>
+        <div class="slider">
+            <div class="images">
+                <img src="../resources/motivational/0.png" alt="Motivational image 0">
+                <img src="../resources/motivational/1.jpg" alt="Motivational image 1">
+                <img src="../resources/motivational/2.jpg" alt="Motivational image 2">
+                <img src="../resources/motivational/3.jpg" alt="Motivational image 3">
+            </div>
+
+            <div class="slider-buttons">
+                <button onclick="showPhoto(0)"></button>
+                <button onclick="showPhoto(1)"></button>
+                <button onclick="showPhoto(2)"></button>
+                <button onclick="showPhoto(3)"></button>
+            </div>
         </div>
-    </div>
+    </main>
 
     <footer>
         <table>
@@ -58,5 +76,7 @@
                 <td>+383 44 000 000</td>
         </table>
     </footer>
+
+    <script src="slider.js"></script>
 </body>
 </html>
