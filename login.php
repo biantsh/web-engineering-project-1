@@ -66,8 +66,10 @@
             $user = new User($_REQUEST['username'], $_REQUEST['password']);
             
             if ($user->existsInDB()) {
-                $_SESSION['username'] = $user->getUsername();
-                header("Location: learn_page/learn.php");
+                $_SESSION["username"] = $user->getUsername();
+
+                $landing_page = $user->getLandingPage();
+                header("Location: " . $landing_page);
             } else {
                 echo '<script>
                     document.getElementById("user-not-exist").innerHTML = "User does not exist!";

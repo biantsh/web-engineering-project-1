@@ -29,7 +29,7 @@
         <main>
             <div>
                 <p class="intro-paragraph">Here you can find useful resources for different technologies used on the web. They are very straight-forward tools 
-                                that you can quite quickly apply to your real-life projects. </p>
+                                           that you can quite quickly apply to your real-life projects. </p>
             </div>
             <div class="destination-logos" >
                     <a href="#card0"><img src="../resources/logo_html.png" alt="html" class="html"  id="html"></a>

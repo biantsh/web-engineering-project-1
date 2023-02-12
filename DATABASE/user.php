@@ -48,10 +48,30 @@
 
         public function addToDB() {
             // Add the user to the database and returns a boolean success indicator.
-            $query = "INSERT into `users` (username, password) VALUES ('$this->username', '$this->password')";
+            $query = "INSERT into `users` (username, password, role) VALUES ('$this->username', '$this->password', 'user')";
             $result = mysqli_query($this->connection, $query);
 
             return $result;
+        }
+
+        public function getRole() {
+            // Get the role of a person (user/admin) based on the username and password.
+            $query = "SELECT * FROM `users` WHERE username='$this->username' and password='$this->password'";
+            $result = mysqli_query($this->connection, $query) or die(mysqli_error($this->connection));
+            $matched_users = mysqli_fetch_all($result, MYSQLI_ASSOC);
+            
+            return $matched_users[0]['role'];
+        }
+
+        public function getLandingPage() {
+            // Returns the path to 'Learn' page for normal users, and the path to 'Dashboard' for admins.
+            $role = $this->getRole();
+
+            if ($role == "admin") {
+                return "admin_dashboard_page/dashboard.php";
+            }
+
+            return "learn_page/learn.php";
         }
     }
 ?>

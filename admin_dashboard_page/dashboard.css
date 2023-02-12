@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #384593;
+    height: 8.1vh;
+    line-height: 6.8vh;
+    padding-left: 0.79vw;
+}
+
+.navbar li {
+    display: inline;
+    color: white;
+    font-size: 2.1vw;
+    padding-right: 1.31vw;
+    vertical-align: middle;
+}
+
+.main {
+    padding-top: 10vh;
+    padding-left: 0.5vw;
+}
+
+.main h3 {
+    font-size: 2.5vw;
+    margin-bottom: 2vh;
+}
+
+.highlighted-text {
+    color: #486cc7;
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+        height: 6.1vh;
+        line-height: 5.8vh;
+        padding-left: 1.5vw;
+    }
+
+    .navbar li {
+        font-size: 4.1vw;
+        padding-right: 2.31vw;
+    }
+}
