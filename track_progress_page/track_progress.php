@@ -30,6 +30,7 @@
     <div class="progress-box-container">
         <div class="progress-box">
             <input type="checkbox" <?php echo $user_progress->getFinishedHTML() != 0 ? 'checked' : '' ?>><p>HTML</p>
+            
         </div>
 
         <div class="progress-box">

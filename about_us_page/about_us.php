@@ -2,7 +2,7 @@
 
 <?php
     require("../DATABASE/db.php");
-    include("../auth.php")
+    include("../auth.php");
 
     $query = "SELECT * FROM `dev_info`";
     $result = mysqli_query($connection, $query);
