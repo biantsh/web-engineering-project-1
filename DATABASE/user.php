@@ -51,6 +51,11 @@
             $query = "INSERT into `users` (username, password, role) VALUES ('$this->username', '".md5($this->password)."', 'user')";
             $result = mysqli_query($this->connection, $query);
 
+            if ($result) {
+                // Add row in `user_progress` defaulting to all false values (no content finished yet)
+                $query = "INSERT into `user_progress (username, finished_html, finished_css, finished_js) VALUES ('$this->username', 0, 0, 0)`"
+            }
+
             return $result;
         }
 
