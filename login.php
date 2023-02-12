@@ -3,14 +3,13 @@
 <head>
     <title>Learn Front-end Development</title>
     <link rel="stylesheet" href="login_page/login.css">
-    <script type="text/javascript" src="login_page/login.js"></script>
-    <script defer src="login_page/form_validation.js"></script>
+    <script defer src="login_page/form_validation_login.js"></script>
 </head>
 
 <body>
     <header>
         <ul class="navbar">
-            <a href="index.html"><li>Home</li></a>
+            <a href="login.php"><li>Home</li></a>
             <a href="learn_page/learn.html"><li>Learn</li></a>
             <a href="about_us_page/about_us.html"><li>About us</li></a>
         </ul>
@@ -25,15 +24,17 @@
         <div class="login">
             <label id="login-signup-label">Log in</label>
 
-            <form id="login-form">
+            <form id="login-form" action="" method="post" name="login">
                 <label for="userName">Username</label><br>
-                <input id="userName" type="text" required><br>
+                <input id="userName" type="text" name="username" required><br>
                 <label for="userPassword">Password</label><br>
-                <input id="userPassword" type="password" required><br>
+                <input id="userPassword" type="password" name="password" required><br>
+
+                <p id="user-not-exist"></p>
             </form>
 
             <button id="submit-button" type="submit" form="login-form">Submit</button>
-            <button id="login-signup-button" onclick="toggleLoginSignup();">Sign up</button>
+            <a href="login_page/register.php"><button id="login-signup-button">Sign up</button></a>
         
             <div id="errorMessage"></div>
         </div>
@@ -56,5 +57,23 @@
                 <td>+383 44 000 000</td>
         </table>
     </footer>
+
+    <?php
+        require('DATABASE/user.php');
+
+        // Log in user
+        if (isset($_POST['username'])) {
+            $user = new User($_REQUEST['username'], $_REQUEST['password']);
+            
+            if ($user->existsInDB()) {
+                $_SESSION['username'] = $user->getUsername();
+                header("Location: learn_page/learn.php");
+            } else {
+                echo '<script>
+                    document.getElementById("user-not-exist").innerHTML = "User does not exist!";
+                </script>';
+            }
+        }
+    ?>
 </body>
 </html>

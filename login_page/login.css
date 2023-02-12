@@ -74,6 +74,13 @@ body {
     margin-bottom: 2.2vh;
 }
 
+#user-not-exist {
+    color: red;
+    position: absolute;
+    left: 0.8vh;
+    bottom: 7.5vh;
+}
+
 .login button {
     font-size: 25px;
     width: 10.45vw;
@@ -122,7 +129,7 @@ footer a, footer a:visited, footer a:hover, footer a:active{
     color: white;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 480px) {
     .navbar {
         height: 6.1vh;
         line-height: 5.8vh;
