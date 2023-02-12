@@ -13,7 +13,7 @@
             <ul class="navbar">
                 <a href="../login.php"> <li>Home</li></a>
                 <a href="../learn_page/learn.html"><li>Learn</li></a>
-                <a href="../about_us_page/about_us.html"><li>About us</li></a>
+                <a href="../about_us_page/about_us.php"><li>About us</li></a>
             </ul>
         </header>
         

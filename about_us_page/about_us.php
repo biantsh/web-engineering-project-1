@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+
+<?php
+    require('../DATABASE/db.php');
+
+    $query = "SELECT * FROM `dev_info`";
+    $result = mysqli_query($connection, $query);
+    $dev_info = mysqli_fetch_all($result, MYSQLI_ASSOC);
+?>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -20,31 +29,16 @@
         <main>
             <h1 class="title-bar">Our team</h1>
                 <div class="team">
-
-                    <div class="member-card">       
-                        <div class="member-card-header">
-                            <img src="../resources/image_Shpat.jpg" alt="" style="border-radius: 50%;">
-                            <h3>Shpat Brahimaj</h3>
-                            <p>Student at UBT<p>
+                    <?php foreach($dev_info as $info) : ?>
+                        <div class="member-card">
+                            <div class="member-card-header">
+                                <img src="<?php echo $info['image_path']?>" alt="Image not found" style="border-radius: 50%;">
+                                <h3><?php echo $info['name'] ?></h3>
+                                <p><?php echo $info['occupation'] ?></p>
+                            </div>
+                            <p><?php echo $info['description'] ?></p>
                         </div>
-                        <p>
-                           Unë jam student në UBT, në vitin e dytë në departamentin 'Shkenca Kompjuterike dhe Inxhinieri'. Jam vullnetar 
-                           i Kryqit të Kuq të Kosovës dhe më parë kam punuar në ProCredit Bank.
-                        </p>
-                    </div>
-
-                    <div class="member-card">
-                        <div class="member-card-header">
-                            <img src="../resources/image_Biant.jpg" alt="Foto e Biantit" style="border-radius: 50%;"class="photo" >
-                            <h3>Biant Shkololli</h3>
-                            <p class="role">Student at UBT</p>
-                        </div>
-                        <p>
-                            Përveç studimeve në UBT, për momentin punoj si Inxhineri i ML/AI në kompanine hellocare.ai. Në kohë të lirë më
-                            pëlqen të udhëtoj në vende të huaja dhe të shikoj filma me të afërmit e mi.
-                        </p>
-                    </div>
-
+                    <?php endforeach; ?>
                 </div>
         </main>
         
