@@ -31,6 +31,18 @@
             return new User($username, $password);
         }
 
+        public static function getNextID() {
+            // Return the first unused ID, that would be assigned to the next created user.
+            global $connection;
+
+            $query = "SELECT AUTO_INCREMENT FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'web_project' AND TABLE_NAME = 'users'";
+            $result = mysqli_query($connection, $query);
+            $row = mysqli_fetch_assoc($result);
+            $next_id = $row['AUTO_INCREMENT'];
+
+            return $next_id;
+        }
+
         public function getUsername() {
             return $this->username;
         }
@@ -59,18 +71,14 @@
             return mysqli_num_rows($result) == 1;
         }
 
-        public function addToDB() {
-            // Add the user to the database and returns a boolean success indicator.
-            $query = "INSERT into `users` (username, password, role) VALUES ('$this->username', '".md5($this->password)."', 'user')";
-            $result = mysqli_query($this->connection, $query);
+        public function addToDB($role) {
+            // Add the user to the database.
+            $query = "INSERT into `users` (username, password, role) VALUES ('$this->username', '".md5($this->password)."', '$role')";
+            mysqli_query($this->connection, $query);
 
-            if ($result) {
-                // Add row in `user_progress` defaulting to all false values (no content finished yet)
-                $query = "INSERT into `user_progress (username, finished_html, finished_css, finished_js) VALUES ('$this->username', 0, 0, 0)`";
-                $result &= mysqli_query($this->connection, $query);
-            }
-
-            return $result;
+            // Add row in `user_progress` defaulting to all false values (no content finished yet)
+            $query = "INSERT into `user_progress (username, finished_html, finished_css, finished_js) VALUES ('$this->username', 0, 0, 0)`";
+            mysqli_query($this->connection, $query);
         }
 
         public function getRole() {

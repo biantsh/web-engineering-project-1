@@ -69,7 +69,8 @@
             $user = new User($_REQUEST['username'], $_REQUEST['password']);
 
             if (!$user->existsInDB()) {
-                $success = $user->addToDB();
+                $role = 'user';
+                $success = $user->addToDB($role);
                 if ($success) {
                     echo '<script>
                         console.log("User added!");

@@ -2,6 +2,7 @@
 
 <?php
     require("../DATABASE/db.php");
+    include("../DATABASE/user.php");
     include("../auth.php");
 
     $technologies_query = "SELECT * FROM `technologies`";
@@ -25,6 +26,8 @@
     $users_query = "SELECT * FROM `users`";
     $result = mysqli_query($connection, $users_query);
     $user_info = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    $next_id = User::getNextID();
 ?>
 
 <html lang="en">
@@ -59,6 +62,7 @@
 
             <p>Number of registered users: <p class="highlighted-text"><?php echo count($user_info) ?></p></p>
 
+            <h4>Users</h4>
             <table border="1">
                 <tr>
                     <th>ID</th>
@@ -84,6 +88,28 @@
                 ?>
 
             </table>
+
+            <h4>Add a new user</h4>
+            <form action="add.php" method="POST">
+                <h5>ID</h3>
+                <input type="text" name="id" value="<?=$next_id?>" readonly>
+
+                <h5>Username</h3>
+                <input type="text" name="username" value="">
+
+                <h5>Password</h3>
+                <input type="text" name="password" value="">
+
+                <h5>Role</h3>
+                <select id="role" name="role" >
+                    <option value='user'>User</option>
+                    <option value='admin'>Admin</option>
+                </select>
+
+                <br><br>
+
+                <input type="submit" name="Submit" value="Submit">
+            </form>
         </div>
 
     </div>

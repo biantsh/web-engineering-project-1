@@ -31,7 +31,6 @@
             <input type="text" name="password" value="">
 
             <h3>Role</h3>
-            
             <select id="role" name="role" >
                 <?php
                     if ($isAdmin) {

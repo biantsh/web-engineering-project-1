@@ -30,13 +30,21 @@
     margin-bottom: 2vh;
 }
 
-.highlighted-text {
-    color: #486cc7;
+.main h4 {
+    font-size: 1.2vw;
+    margin-top: 2vh;
 }
 
-table {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+.main h5 {
+    font-size: 0.9vw;
+}
+
+.main input {
+    margin-bottom: 1.5vh;
+}
+
+.highlighted-text {
+    color: #486cc7;
 }
 
 @media only screen and (max-width: 640px) {
