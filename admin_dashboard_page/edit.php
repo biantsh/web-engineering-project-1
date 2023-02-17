@@ -62,7 +62,11 @@ if(isset($_POST['Submit'])){
     $password = $_POST['password'];
     $role = $_POST['role'];
 
-    $query = "UPDATE users SET username='$username', password='".md5($password)."', role='$role' WHERE id='$id'";
+    if ($password == '') {
+        $query = "UPDATE users SET username='$username', role='$role' WHERE id='$id'";
+    } else {
+        $query = "UPDATE users SET username='$username', password='".md5($password)."', role='$role' WHERE id='$id'";
+    }
     mysqli_query($connection, $query);
     
     echo "<script> 
