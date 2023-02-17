@@ -57,7 +57,33 @@
 
             <br>
 
-            <p>Number of registed users: <p class="highlighted-text"><?php echo count($user_info) ?></p></p>
+            <p>Number of registered users: <p class="highlighted-text"><?php echo count($user_info) ?></p></p>
+
+            <table border="1">
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Role</th>
+                </tr>
+
+                <?php
+                foreach($user_info as $user) {
+                    echo
+                    "
+                    <tr>
+                        <td>$user[id]</td>
+                        <td>$user[username]</td>
+                        <td>$user[password]</td>
+                        <td>$user[role]</td>
+                        <td><a href='edit.php?id=$user[id]'>Edit</a></td>
+                        <td><a href='delete.php?id=$user[id]'>Delete</a></td>
+                    </tr>
+                    ";
+                }
+                ?>
+
+            </table>
         </div>
 
     </div>

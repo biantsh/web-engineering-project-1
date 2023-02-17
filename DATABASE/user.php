@@ -1,6 +1,5 @@
 <?php
     require('db.php');
-    // include("../auth.php");
 
     class User {
         private $username;
@@ -17,6 +16,19 @@
             $password = stripslashes($password);
             $password = mysqli_real_escape_string($connection, $password);
             $this->password = $password;
+        }
+
+        public static function getUserByID($id) {
+            global $connection;
+            
+            $query = "SELECT * FROM `users` WHERE id='$id'";
+            $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+
+            $user = mysqli_fetch_assoc($result);
+            $username = $user['username'];
+            $password = $user['password'];
+
+            return new User($username, $password);
         }
 
         public function getUsername() {
@@ -63,7 +75,7 @@
 
         public function getRole() {
             // Get the role of a person (user/admin) based on the username and password.
-            $query = "SELECT * FROM `users` WHERE username='$this->username' and password='".md5($this->password)."'";
+            $query = "SELECT * FROM `users` WHERE username='$this->username'";
             $result = mysqli_query($this->connection, $query) or die(mysqli_error($this->connection));
             $matched_users = mysqli_fetch_all($result, MYSQLI_ASSOC);
             
